@@ -1,6 +1,8 @@
 class TodosReflex < ApplicationReflex
+  before_reflex :assign_todo, only: [:update, :toggle, :destroy]
+
   def create
-    Todo.create session_id: session_id, title: element.value
+    Todo.create session_id: session.id.to_s, title: element.value
     cable_ready.set_value selector: "##{element.id}", value: ""
   end
 
@@ -13,24 +15,24 @@ class TodosReflex < ApplicationReflex
   end
 
   def update
-    Todo.find_by(session_id: session_id, id: element.dataset.id)&.update title: element.value
+    @todo&.update title: element.value
   end
 
   def toggle
-    Todo.find_by(session_id: session_id, id: element.dataset.id)&.toggle! :completed
+     @todo&.toggle! :completed
   end
 
   def destroy
-    Todo.find_by(session_id: session_id, id: element.dataset.id)&.destroy
+      @todo&.destroy
   end
 
   def toggle_all
-    todos = Todo.where(session_id: session_id)
+    todos = Todo.where(session_id: session.id.to_s)
     todos.update_all completed: todos.active.exists?
   end
 
   def destroy_completed
-    Todo.where(session_id: session_id, completed: true).destroy_all
+    Todo.where(session_id: session.id.to_s, completed: true).destroy_all
   end
 
   def filter
@@ -39,7 +41,7 @@ class TodosReflex < ApplicationReflex
 
   private
 
-  def session_id
-    session.id.to_s
+  def assign_todo
+    @todo = Todo.find_by(session_id: session.id.to_s, id: element.dataset.id)
   end
 end
