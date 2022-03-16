@@ -1,6 +1,6 @@
 # TodoMVC with Rails 7, StimulusReflex, & Import Maps
 
-A minimal, but fully functioning, demo TodoMVC app built with [Rails 7](https://rubyonrails.org/2021/12/15/Rails-7-fulfilling-a-vision), [StimulusReflex](https://docs.stimulusreflex.com/), and [Import Maps](https://github.com/WICG/import-maps).
+A minimal, but fully functioning, demo [TodoMVC](https://todomvc.com/) app built with [Rails 7](https://rubyonrails.org/2021/12/15/Rails-7-fulfilling-a-vision), [StimulusReflex](https://docs.stimulusreflex.com/), and [Import Maps](https://github.com/WICG/import-maps).
 
 _Only 185 lines of code. 😳_
 
