@@ -42,4 +42,4 @@ SUM:                            21             30             25            185
 ## Best Practices
 
 Note that this demo app violates what might be considered "best practices."
-Namely, it uses reflexes for what should traditionally be handled with a Rails form.
+Namely, it uses reflexes for what would traditionally be handled with Rails forms.
