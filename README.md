@@ -4,7 +4,7 @@ A minimal, but fully functioning, demo [TodoMVC](https://todomvc.com/) app built
 
 _Only 185 lines of code. 😳_
 
-[View a full diff from `rails new` to functional app.](https://github.com/hopsoft/todomvc/compare/69d97c94872895f0cdead979c70fb766919bb872...fa587157386c010876279cffeffa037162c5205e) _It's a great way to quickly grok what's required to get Rails 7 and StimulusReflex 3.5.0.pre8 working with Import Maps.__
+[View a full diff from `rails new` to functional app.](https://github.com/hopsoft/todomvc/compare/69d97c94872895f0cdead979c70fb766919bb872...fa587157386c010876279cffeffa037162c5205e) _It's a great way to quickly grok what's required to get Rails 7 and StimulusReflex 3.5.0.pre8 working with Import Maps._
 
 ## How to run it locally
 
