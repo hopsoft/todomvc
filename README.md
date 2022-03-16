@@ -13,6 +13,7 @@ git clone -o github https://github.com/hopsoft/todomvc.git
 cd todomvc
 bundle
 bin/rails db:migrate
+bin/rails dev:cache
 bin/rails s
 ```
 
