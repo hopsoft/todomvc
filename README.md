@@ -38,30 +38,7 @@ SUM:                            21             30             25            185
 -------------------------------------------------------------------------------
 ```
 
-```
-rails stats
-+----------------------+--------+--------+---------+---------+-----+-------+
-| Name                 |  Lines |    LOC | Classes | Methods | M/C | LOC/M |
-+----------------------+--------+--------+---------+---------+-----+-------+
-| Controllers          |      9 |      9 |       2 |       1 |   0 |     7 |
-| Helpers              |      2 |      2 |       0 |       0 |   0 |     0 |
-| Jobs                 |      7 |      2 |       1 |       0 |   0 |     0 |
-| Models               |     26 |     12 |       2 |       1 |   0 |    10 |
-| Mailers              |      4 |      4 |       1 |       0 |   0 |     0 |
-| Channels             |     13 |     12 |       2 |       1 |   0 |    10 |
-| Views                |     99 |     92 |       0 |       0 |   0 |     0 |
-| Stylesheets          |      1 |      0 |       0 |       0 |   0 |     0 |
-| JavaScript           |     28 |     14 |       0 |       0 |   0 |     0 |
-| Libraries            |      0 |      0 |       0 |       0 |   0 |     0 |
-| Controller tests     |      0 |      0 |       0 |       0 |   0 |     0 |
-| Helper tests         |      0 |      0 |       0 |       0 |   0 |     0 |
-| Model tests          |      0 |      0 |       0 |       0 |   0 |     0 |
-| Mailer tests         |      0 |      0 |       0 |       0 |   0 |     0 |
-| Channel tests        |     11 |      3 |       1 |       0 |   0 |     0 |
-| Integration tests    |      0 |      0 |       0 |       0 |   0 |     0 |
-| System tests         |      0 |      0 |       0 |       0 |   0 |     0 |
-+----------------------+--------+--------+---------+---------+-----+-------+
-| Total                |    200 |    150 |       9 |       3 |   0 |    48 |
-+----------------------+--------+--------+---------+---------+-----+-------+
-  Code LOC: 147     Test LOC: 3     Code to Test Ratio: 1:0.0
-```
+## Best Practices
+
+Note that this demo app violates what might be considered "best practices."
+Namely, it uses reflexes for what should traditionally be handled with a Rails form.
