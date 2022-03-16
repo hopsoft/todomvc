@@ -9,9 +9,10 @@ _Only 185 lines of code. 😳_
 ## How to run it locally
 
 ```
-git clone https://github.com/hopsoft/todomvc.git
+git clone -o github https://github.com/hopsoft/todomvc.git
 cd todomvc
 bundle
+bin/rails db:migrate
 bin/rails s
 ```
 
