@@ -12,7 +12,7 @@ _Only 185 lines of code. 😳_
 git clone -o github https://github.com/hopsoft/todomvc.git
 cd todomvc
 bundle
-bin/rails db:migrate
+bin/rails db:create db:migrate
 bin/rails dev:cache
 bin/rails s
 ```
