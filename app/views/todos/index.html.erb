@@ -1,0 +1,21 @@
+<section class="todoapp" data-controller="todos">
+  <header class="header">
+    <h1><small><%= "#{@filter} todos" %></small></h1>
+    <input id="<%= "todo_#{@edit_id.to_i}" %>" <%= "autofocus " unless @edit_id %>
+      class="new-todo" placeholder="What needs to be done?"
+      data-reflex="change->TodosReflex#create">
+  </header>
+
+  <% if @all_todos.any? %>
+    <section class="main">
+      <input class="toggle-all" type="checkbox">
+      <label data-reflex="click->TodosReflex#toggle_all">
+        Mark all as complete
+      </label>
+      <ul class="todo-list" data-target="todos.list">
+        <%= render partial: "todo", collection: @filtered_todos %>
+      </ul>
+    </section>
+  <% end %>
+  <%= render "/todos/filters" if @all_todos.any? %>
+</section>

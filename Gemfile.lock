@@ -236,6 +236,7 @@ DEPENDENCIES
   stimulus-rails
   stimulus_reflex (= 3.5.0.pre8)
   turbo-rails
+  tzinfo-data
   web-console
   webdrivers
 
